@@ -42,6 +42,7 @@ public class AccountTest {
                 {" Iv", false},
                 {"   ", false},
                 {"", false},
+                {null, false},
         };
     }
 

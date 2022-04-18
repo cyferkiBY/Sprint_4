@@ -5,7 +5,11 @@ public class Account {
     private final String name;
 
     public Account(String name) {
-        this.name = name;
+        if (name == null) {
+            this.name = "";
+        } else {
+            this.name = name;
+        }
     }
 
     @Step("Check name {this.name} to emboss")
